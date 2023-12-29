@@ -9,10 +9,10 @@ body {
   overflow: hidden;
   margin: 0;
   background-color: #111;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .container {
@@ -26,7 +26,6 @@ body {
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
-  color: #fff;
   flex: 1;
   background-size: cover;
   background-position: center;
@@ -42,12 +41,14 @@ body {
   margin: 0;
   font-size: 24px;
   opacity: 0;
+  color: #fff;
 }
 
 .slide.active {
   flex: 10;
+  border: 1px solid #001eff;
 }
 .slide.active h3 {
   opacity: 1;
-  transition: opacity .3s ease-in ;
+  transition: opacity .3s ease-in .3s;
 }
